@@ -7,8 +7,8 @@
 
 | Задание | Выполнено? |
 |--------|------------|
-| [task_l.1.py](./homeworks_lvl_1/task_1.1.py) | [+] |
-| [task_l.2.py](./homeworks_lvl_1/task_l.2.py) | [+] |
+| [task_1.1.py](./homeworks_lvl_1/task_1.1.py) | [+] |
+| [task_1.2.py](./homeworks_lvl_1/task_l.2.py) | [+] |
 | [task_1.3.py](./homeworks_lvl_1/task_1.3.py) | [ ] |
 | [task_1.4.py](./homeworks_lvl_1/task_1.4.py) | [ ] |
 
