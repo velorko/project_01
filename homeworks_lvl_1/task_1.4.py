@@ -30,3 +30,19 @@ store = {
 
 # Пример: "Кроссовки тип 3 (Adidas) - 31 шт, стоимость 50747 руб"
 
+total_cost = {}
+
+# Считаем общую стоимость каждого товара на складе
+for title, code in titles.items():
+    store_items = store.get(code, [])
+    for item in store_items:
+        quantity = item.get('quantity', 0)
+        price = item.get('price', 0)
+        total_cost[code] = total_cost.get(code, 0) + quantity * price
+
+# Выводим результат
+for title, code in titles.items():
+    store_items = store.get(code, [])
+    total_quantity = sum(item.get('quantity', 0) for item in store_items)
+    total_price = total_cost.get(code, 0)
+    print(f"{title} - {total_quantity} шт, стоимость {total_price} руб")
