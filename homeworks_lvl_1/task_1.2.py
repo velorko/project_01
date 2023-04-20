@@ -80,4 +80,4 @@ total_duration_minutes, total_duration_seconds = divmod(total_duration, 1)
 total_duration_formatted = datetime.strptime(f"{int(total_duration_minutes):02}:{int(total_duration_seconds*60):02}", "%M:%S")
 
 # Выводим результат
-print(f"Пункт D. Три песни из пункта А звучат {total_duration_formatted.strftime('%M:%S')}.")
+print(f"Пункт D. Три песни из пункта А звучат {total_duration_formatted.strftime('%M:%S')}")
