@@ -46,3 +46,5 @@ for title, code in titles.items():
     total_quantity = sum(item.get('quantity', 0) for item in store_items)
     total_price = total_cost.get(code, 0)
     print(f"{title} - {total_quantity} шт, стоимость {total_price} руб")
+    
+# Тут без коментариев
