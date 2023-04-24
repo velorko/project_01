@@ -20,3 +20,6 @@ print('Второй трек: ', second_song)
 # Второй с конца трек
 second_to_last_song = my_favorite_songs.split(',')[-2].strip()
 print('Второй с конца трек: ', second_to_last_song)
+
+# Отлично. Но можно немного покороче
+print([my_favorite_songs.split(', ')[i] for i in [0, -1, 1, -2]])
