@@ -81,3 +81,25 @@ total_duration_formatted = datetime.strptime(f"{int(total_duration_minutes):02}:
 
 # Выводим результат
 print(f"Пункт D. Три песни из пункта А звучат {total_duration_formatted.strftime('%M:%S')}")
+
+
+# Да, можно через divmod. У меня было решение с использованием пакета math
+from random import sample
+from datetime import timedelta
+from math import modf
+
+# Пункт D(А)
+total_time = timedelta()
+for song in sample(my_favorite_songs, 3):
+    s, m = modf(song[1])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Пункт D(A): Три песни звучат {total_time}')
+
+# Пункт D(B)
+total_time = timedelta()
+for song in sample(tuple(my_favorite_songs_dict), 3):
+    s, m = modf(my_favorite_songs_dict[song])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Пункт D(B): Три песни звучат {total_time}')
