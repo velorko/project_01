@@ -35,3 +35,23 @@ def maximum(arr):
             max_num = num  # Если нашли число больше текущего наибольшего, переписываем значение
 
     return max_num
+
+arr1 = [4, 6, 2, 1, 9, 63, -134, 566]
+print("arr1:", arr1)
+print("Minimum:", minimum(arr1))  # -134
+print("Maximum:", maximum(arr1))  # 566
+
+arr2 = [-52, 56, 30, 29, -54, 0, -110]
+print("arr2:", arr2)
+print("Minimum:", minimum(arr2))  # -110
+print("Maximum:", maximum(arr2))  # 56
+
+arr3 = [42, 54, 65, 87, 0]
+print("arr3:", arr3)
+print("Minimum:", minimum(arr3))  # 0
+print("Maximum:", maximum(arr3))  # 87
+
+arr4 = [5]
+print("arr4:", arr4)
+print("Minimum:", minimum(arr4))  # 5
+print("Maximum:", maximum(arr4))  # 5
