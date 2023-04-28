@@ -19,7 +19,7 @@
 |--------|------------|
 | [task_2.1.py](./homeworks_lvl_2/task_2.1.py) | [+] |
 | [task_2.2.py](./homeworks_lvl_2/task_2.2.py) | [+] |
-| [task_2.3.py](./homeworks_lvl_2/task_2.3.py) | [ ] |
+| [task_2.3.py](./homeworks_lvl_2/task_2.3.py) | [+] |
 | [task_2.4.py](./homeworks_lvl_2/task_2.4.py) | [ ] |
 
 * **lvl_3** – задача по темам: "Классы", "Магические методы", "Наследование".
