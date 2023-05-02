@@ -67,8 +67,19 @@ def get_student_info(student_id):
     else:
         print('Студент с таким ID не найден')
 
-# Пример использования функции
+# Пример использования 
+print('---Данные студента 202---')
 get_student_info(202)
+print('---Данные студента 204---')
 get_student_info(204)
-# Закрываем соединение с базой данных
-conn.close()
+#Или можно попросить ввести ID студента
+while True:
+    student_id = input('Введите ID студента (для выхода введите "q"): ')
+    if student_id == 'q':
+        break
+    try:
+        student_id = int(student_id)
+        print('---Данные введенного студента ',student_id,'---')
+        get_student_info(student_id)
+    except ValueError:
+        print('Введите корректный ID студента')
